@@ -20,8 +20,8 @@ Route::get('/', function () {
     return view('auth.signup');
 });
 
-URL::get('/signup', function () {
-    return view('auth.signup');
+Route::get('/signup', function () {
+    return view('full.path.to.auth.signup');
 });
 
 Route::get('/signup', [AuthController::class, 'showSignupForm'])->name('signup');
