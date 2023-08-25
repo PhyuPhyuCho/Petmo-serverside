@@ -32,7 +32,7 @@ Route::post('/login', '\App\Http\Controllers\AuthController@login');
 Route::post('/logout', '\App\Http\Controllers\AuthController@logout')->name('logout');
 
 // Signup Routes
-Route::get('/signup', '\App\Http\Controllers\AuthController@showSignupForm')->name('signup');
+//Route::get('/signup', '\App\Http\Controllers\AuthController@showSignupForm')->name('signup');
 Route::post('/signup', '\App\Http\Controllers\AuthController@signup');
 
 
