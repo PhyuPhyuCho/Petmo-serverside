@@ -20,6 +20,10 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::get('/signup', function () {
+    return view('auth.signup');
+});
+
 Route::get('/signup', [AuthController::class, 'showSignupForm'])->name('signup');
 
 // Login and Logout Routes
