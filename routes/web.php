@@ -24,11 +24,11 @@ Route::get('/chat', function () {
 });
 
 // Login and Logout Routes
-//Route::get('/login', '\App\Http\Controllers\AuthController@showLoginForm')->name('login');
-//Route::post('/login', '\App\Http\Controllers\AuthController@login');
+Route::get('/login', '\App\Http\Controllers\AuthController@showLoginForm')->name('login');
+Route::post('/login', '\App\Http\Controllers\AuthController@login');
 // Renamed route names
-Route::get('/login', 'AuthController@showLoginForm')->name('login'); // Keep one route with the original name
-Route::post('/login', 'AuthController@login')->name('login.post'); // Rename the other route
+//Route::get('/login', 'AuthController@showLoginForm')->name('login'); // Keep one route with the original name
+//Route::post('/login', 'AuthController@login')->name('login.post'); // Rename the other route
 
 Route::post('/logout', '\App\Http\Controllers\AuthController@logout')->name('logout');
 
