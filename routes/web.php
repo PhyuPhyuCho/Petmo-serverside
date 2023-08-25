@@ -20,7 +20,7 @@ Route::get('/', function () {
     return view('auth.signup');
 });
 
-Route::get('/signup/', function () {
+Route::get('api/signup', function () {
     return view('auth.signup');
 });
 
