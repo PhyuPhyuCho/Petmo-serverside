@@ -24,13 +24,13 @@ Route::get('/chat', function () {
 });
 
 // Login and Logout Routes
-Route::get('/login', 'AuthController@showLoginForm')->name('login');
-Route::post('/login', 'AuthController@login');
-Route::post('/logout', 'AuthController@logout')->name('logout');
+Route::get('/login', '\App\Http\Controllers\AuthController@showLoginForm')->name('login');
+Route::post('/login', '\App\Http\Controllers\AuthController@login');
+Route::post('/logout', '\App\Http\Controllers\AuthController@logout')->name('logout');
 
 // Signup Routes
-Route::get('/signup', 'AuthController@showSignupForm')->name('signup');
-Route::post('/signup', 'AuthController@signup');
+Route::get('/signup', '\App\Http\Controllers\AuthController@showSignupForm')->name('signup');
+Route::post('/signup', '\App\Http\Controllers\AuthController@signup');
 
 
 Route::post('/chat/{sender_user_id}/{receiver_user_id}/{place_id}', '\App\Http\Controllers\ChatController@sendMessage')->name('api.chat.send');
