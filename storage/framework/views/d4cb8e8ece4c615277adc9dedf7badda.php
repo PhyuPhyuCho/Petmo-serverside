@@ -101,11 +101,11 @@
             <?php $__currentLoopData = $formattedMessages; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $formattedMessage): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
                 <div class="chat-message">
                     <?php if($formattedMessage['sender_user_id'] == auth()->user()->id): ?>
-                        <div style="margin: right;">
+                        <div style="">
                             <p><?php echo e($formattedMessage['message']); ?></p>
                         </div>
                     <?php else: ?>
-                        <div style="margin: left;">
+                        <div style="margin-left: 700px;">
                             <p><?php echo e($formattedMessage['message']); ?></p>
                         </div>
                     <?php endif; ?>

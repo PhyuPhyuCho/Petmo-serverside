@@ -96,7 +96,7 @@
                     <div class="pet-hotel-item">
                         <img src="<?php echo e(url('storage/img/img1.jpeg')); ?>" alt="<?php echo e($place->place_name); ?>" class="place-image">
                     </div>   
-                        <p class="place-description"><?php echo e($place->price); ?> 円/日</p>
+                        <p class="place-price"><?php echo e($place->price); ?> 円/日</p>
                         <p class="place-description"><?php echo e($place->description); ?></p>
                 </div>
             <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>

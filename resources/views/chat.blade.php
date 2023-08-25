@@ -101,11 +101,11 @@
             @foreach ($formattedMessages as $formattedMessage)
                 <div class="chat-message">
                     @if ($formattedMessage['sender_user_id'] == auth()->user()->id)
-                        <div style="margin: right;">
+                        <div style="">
                             <p>{{ $formattedMessage['message'] }}</p>
                         </div>
                     @else
-                        <div style="margin: left;">
+                        <div style="margin-left: 700px;">
                             <p>{{ $formattedMessage['message'] }}</p>
                         </div>
                     @endif

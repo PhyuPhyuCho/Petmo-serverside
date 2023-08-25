@@ -8145,3 +8145,12 @@
 #53 /Users/phyuphyucho/Petmo-serverside/vendor/laravel/framework/src/Illuminate/Foundation/resources/server.php(16): require_once('/Users/phyuphyu...')
 #54 {main}
 "} 
+[2023-08-24 05:38:22] local.INFO: sendMessage method called  
+[2023-08-24 05:38:22] local.INFO: 11  
+[2023-08-24 05:38:22] local.INFO: 2  
+[2023-08-24 06:59:32] local.INFO: sendMessage method called  
+[2023-08-24 06:59:32] local.INFO: 15  
+[2023-08-24 06:59:32] local.INFO: 3  
+[2023-08-24 07:07:13] local.INFO: sendMessage method called  
+[2023-08-24 07:07:13] local.INFO: 16  
+[2023-08-24 07:07:13] local.INFO: 1  

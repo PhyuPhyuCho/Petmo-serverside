@@ -96,7 +96,7 @@
                     <div class="pet-hotel-item">
                         <img src="{{ url('storage/img/img1.jpeg') }}" alt="{{ $place->place_name }}" class="place-image">
                     </div>   
-                        <p class="place-description">{{ $place->price }} 円/日</p>
+                        <p class="place-price">{{ $place->price }} 円/日</p>
                         <p class="place-description">{{ $place->description }}</p>
                 </div>
             @endforeach
