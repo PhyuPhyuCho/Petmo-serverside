@@ -35,7 +35,9 @@ class AuthController extends Controller
         // Log in the user after registration
         Auth::login($user);
 
-        return redirect()->intended('/login'); // Redirect to dashboard or any desired page
+        return response()->json(); 
+        //return redirect()->intended('/login'); // Redirect to dashboard or any desired page
+        
     }
 
     public function login(Request $request)
