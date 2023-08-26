@@ -46,3 +46,6 @@ Route::get('/pet-azuke-places', '\App\Http\Controllers\AzukePlaceController@getA
 Route::get('/pet-azuke-places/{place_id}', '\App\Http\Controllers\AzukePlaceController@getPetAzukePlace')->name('getPetAzukePlace');
 
 
+Route::fallback(function () {
+    abort(404);
+});
