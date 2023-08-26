@@ -3,5 +3,5 @@
 use Illuminate\Support\Facades\Route;
 
 Route::get('/welcome', function () {
-    return view('auth.signup');
+    return true;
 });
