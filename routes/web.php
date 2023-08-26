@@ -19,11 +19,11 @@ use App\Http\Controllers\AuthController;
 Route::get('/', function () {
     return view('auth.signup');
 });
-Route::get('/signup', function () {
-    return view('auth.signup');
-});
+//Route::get('/signup', function () {
+//    return view('auth.signup');
+//});
 
-//Route::get('/signup', [AuthController::class, 'showSignupForm'])->name('signup');
+Route::get('/signup', [AuthController::class, 'showSignupForm'])->name('signup');
 
 // Login and Logout Routes
 Route::get('/login', '\App\Http\Controllers\AuthController@showLoginForm')->name('login');
