@@ -43,7 +43,7 @@ class AzukePlaceController extends Controller
     {
         try {
             $places = $this->azukePlaceService->getAllPlaces();
-            return $places;
+            return response()->json($places);
             //return view('petAzukePlaces', ['petAzukePlaces' => $places]);
             //return $places;
         } catch (\Exception $e) {
@@ -64,7 +64,7 @@ class AzukePlaceController extends Controller
         //    'place' => $place
         //]);
         //return view('petAzukedetail', ['place' => $place, 'holidays' => $holidays]);
-        return $place;
+        return response()->json($place);
 
 
         if (!$place) {
