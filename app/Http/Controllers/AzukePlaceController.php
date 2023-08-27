@@ -62,7 +62,8 @@ class AzukePlaceController extends Controller
         //    'result' => true,
         //    'place' => $place
         //]);
-        return view('petAzukedetail', ['place' => $place, 'holidays' => $holidays]);
+        //return view('petAzukedetail', ['place' => $place, 'holidays' => $holidays]);
+        return $place;
 
 
         if (!$place) {
