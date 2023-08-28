@@ -33,8 +33,9 @@ class ChatController extends Controller
         
         // Fetch messages from the database, you can modify the query as needed
         $messages = $this->chatService->getMessagesByUserPlaceId($senderUserId, $placeId);
-        
-        return view('chat', ['formattedMessages' => $messages]);
+        return response()->json($messages);
+
+        //return view('chat', ['formattedMessages' => $messages]);
     }
     
 
@@ -78,8 +79,10 @@ class ChatController extends Controller
         Log::info($placeId);
 
         // The rest of your logic...
+        return response()->json(['result' => true]);
 
-        return redirect("/chat/{$senderUserId}/{$receiverUserId}/{$placeId}");
+
+        //return redirect("/chat/{$senderUserId}/{$receiverUserId}/{$placeId}");
     }
 
 

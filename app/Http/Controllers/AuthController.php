@@ -34,8 +34,10 @@ class AuthController extends Controller
 
         // Log in the user after registration
         Auth::login($user);
+        return response()->json(['result' => true]);
+ 
 
-        return redirect()->intended('/login'); // Redirect to dashboard or any desired page
+        //return redirect()->intended('/login'); // Redirect to dashboard or any desired page
     }
 
     public function login(Request $request)
@@ -50,9 +52,11 @@ class AuthController extends Controller
             // Authentication passed
             return redirect()->intended('/pet-azuke-places'); // Redirect to dashboard or any desired page
         }
+        
+        return response()->json(['result' => true]);
 
         // Authentication failed
-        return redirect()->route('login')->with('error', 'Invalid credentials');
+        //return redirect()->route('login')->with('error', 'Invalid credentials');
     }
 
     public function logout(Request $request)
